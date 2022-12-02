@@ -1,0 +1,22 @@
+:root {
+    --cssGrid: repeat(16,1fr)
+}
+html {
+    box-sizing: border-box
+}
+*,*:before,*:after {
+    box-sizing: inherit
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: var(--cssGrid);
+    border: 50px black solid;
+    min-width: 1600px;
+    min-height: 1600px;
+} 
+
+.box {
+    min-height: 16px;
+    min-width: 16px;
+}
